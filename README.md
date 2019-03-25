@@ -7,13 +7,10 @@ We present a four-category classification algorithm for the solar wind, based on
 For these data, we plan to use Guassian process classification method.GP is a nonparametric statistical model, which has the advantage of producing probabilistic results, employing a Bayesian approach. This is a key feature that makes GP models different from most machine learning schemes. In particular, other classification schemes have the goal of finding the category boundaries in a multidimensional input space, unambiguously partitioning the input space into categories. The probabilistic approach is more flexible and informative, because it attaches a confidence level to predictions.<br>
 
 ## Environemts and APIs:
-Python 3.6<br>
-Numpy,Pandas<br>
-Tensorflow<br>
-sklearn<br>
+Matlab<br>
 
 ## Architecture:
-
+![image](https://github.com/ec500-software-engineering/project-05-solar_wind_classification/blob/master/images/Blank%20Diagram.png) 
 
 ## Usage:
 Just run the main.py to test the model
