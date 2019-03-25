@@ -21,5 +21,5 @@ Just run the main.py to test the model
 * **Jing Li** - jingli18@bu.edu - *Initial work*
 * **Mingdao Che** - mdche@bu.edu - *Initial work*
 
-## citing literature:
+## Citing literature:
 [Classification of Solar Wind With Machine Learning Enrico Camporeale  Algo Carè  Joseph E. Borovsky First published: 16 October 2017](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2017JA024383)
