@@ -1,4 +1,4 @@
-![image](https://travis-ci.org/ec500-software-engineering/project-05-solar_wind_classification.svg?branch=master)
+![Build Status](https://travis-ci.org/ec500-software-engineering/project-05-solar_wind_classification.svg?branch=master) Because the Matlab code is not compatable with the travis CI.
 # Solar_Wind_Classification_No.1
 This is a final projcet for EC500 Software Engineering
 
