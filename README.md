@@ -1,3 +1,4 @@
+![image](https://travis-ci.org/ec500-software-engineering/project-05-solar_wind_classification.svg?branch=master)
 # Solar_Wind_Classification_No.1
 This is a final projcet for EC500 Software Engineering
 
