@@ -7,7 +7,7 @@ class SolarWindClassifier:
         self.dic = os.getcwd()
 
     def classifier(self, filename):
-        self.file = self.dic + '/' + filename
+        self.file = self.dic + '/matlab/' + filename
         matlab_classifier = matlab.engine.start_matlab('-novm')
         print("Matlab Engine Loading... ...")
         classifier_result = matlab_classifier.classify_solar_wind(self.file)
@@ -19,4 +19,4 @@ class SolarWindClassifier:
 
 
 S = SolarWindClassifier()
-S.classifier("omni2_2017.dat")
+S.classifier("/matlab/omni2_2017.dat")
