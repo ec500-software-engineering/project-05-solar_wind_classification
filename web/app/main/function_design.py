@@ -20,4 +20,4 @@ class SolarWindClassifier:
 
 
 S = SolarWindClassifier()
-S.classifier("omni2_2017.dat")
+S.classifier("/matlab/omni2_2017.dat")
