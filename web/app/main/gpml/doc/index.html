@@ -138,16 +138,16 @@ need to know about:</p>
   computational aspect in GP inference: the scalability with the number of inputs.
   We offer four options here: <br>
   a) Exact covariance computations serving as default option
-     (<a href="../doc/demoRegression.m"><tt>demoRegression</tt></a>, <a href="../doc/demoClassification.m"><tt>demoClassification</tt></a>), <br>
+     (<a href="demoRegression.m"><tt>demoRegression</tt></a>, <a href="demoClassification.m"><tt>demoClassification</tt></a>), <br>
   b) sparse covariance approximations exploiting inducing points and conditional independence 
-     (<a href="../cov/apxSparse.m"><tt>apxSparse</tt></a>, <a href="../doc/demoSparse.m"><tt>demoSparse</tt></a>), <br>
+     (<a href="../cov/apxSparse.m"><tt>apxSparse</tt></a>, <a href="demoSparse.m"><tt>demoSparse</tt></a>), <br>
   c) grid-based covariance approximations using interpolation from a rectilinear grid of
      inducing points and exploiting the resulting Kronecker and Toeplitz property 
      of covariance matrices
-     (<a href="../cov/apxGrid.m"><tt>apxGrid</tt></a>, <a href="../doc/demoGrid1d.m"><tt>demoGrid1d</tt></a>, <a href="../doc/demoGrid2d.m"><tt>demoGrid2d</tt></a>), and <br>
+     (<a href="../cov/apxGrid.m"><tt>apxGrid</tt></a>, <a href="demoGrid1d.m"><tt>demoGrid1d</tt></a>, <a href="demoGrid2d.m"><tt>demoGrid2d</tt></a>), and <br>
   d) state space covariance approximations exploiting a state space representation
      of univariate GPs
-     (<a href="../cov/apxState.m"><tt>apxState</tt></a>, <a href="../doc/demoState.m"><tt>demoState</tt></a>).
+     (<a href="../cov/apxState.m"><tt>apxState</tt></a>, <a href="demoState.m"><tt>demoState</tt></a>).
 </dl>  
 
 <h3>3b) The <tt>gp</tt> Function</h3>
@@ -1073,7 +1073,7 @@ the training data is about <tt>exp(14.13-11.97)=8.7</tt> times smaller
 than for the setup actually generating the data. Finally, we plot the
 predictive distribution.</p>
 
-<center><img src="f3.gif"  alt="f3.gif"></center><br>
+<center><img src="f3.gif" alt="f3.gif"></center><br>
 
 <p>This plot shows clearly, that the model is indeed quite different from
 the generating process. This is due to the different specifications of
