@@ -7,18 +7,17 @@
 % to classify a whole year from the OMNI2 database
 
 
-clear all
+function result = classify_solar_wind()
 
 load parameters_classification.mat ; % load hypers and training_set
 
 run startup; % load your local gpml library. See http://www.gaussianprocess.org/gpml/code
 
 % urlwrite('ftp://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/omni2_2017.dat','omni2_2017.dat'); % Download the OMNI2_2017 file 
-omni=load('omni2_2017.dat'); % load the whole year (until available).
-
+omni=load("omni2_2017.dat"); % load the whole year (until available).
 meanfunc = {@meanZero};           % empty: don't use a mean function
 covfunc = {'covSum', {'covSEiso',{@covPPard, 1}}};  
-likfunc = @likLogistic;  
+likfunc = @likLogistic;
 
 % purge the gaps in omni database
 f=find(omni(:,25)==9999);omni(f,:)=[];
@@ -48,7 +47,8 @@ omni_date = omni(:,1:3);
 m_te = repmat(m_xtr,size(test_set,1),1); 
 s_te = repmat(s_xtr,size(test_set,1),1);
 test_set = (test_set-m_te)./s_te;
-
+test_set = test_set(1,:);
+test_set = importdata("test.mat");
 % classification is performed as '1 vs all'
 % warning: the training set xtr is rather large (about 9000 events x 7 attributes)
 % the following computations can take some time
@@ -74,10 +74,11 @@ sum_probs = prob_ej + prob_ch + prob_sr + prob_sb;
 
 final_prob = [prob_ej prob_ch prob_sr prob_sb]./sum_probs;
 
-classification_result=[omni_date final_prob]; % this vector contains the time (year-doy-hour) 
-                                              % and the probabilities to belong to each category:
-                                              %  ejecta - coronal holes origin - sector reversal origin - streamer belt origin
-                                              
+result=final_prob; 
+%  result = importdata("test.mat");
+ save('result.mat','result');
+end
+
 
                                               
                                               
@@ -99,5 +100,3 @@ classification_result=[omni_date final_prob]; % this vector contains the time (y
 % STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                                              
-                                              
