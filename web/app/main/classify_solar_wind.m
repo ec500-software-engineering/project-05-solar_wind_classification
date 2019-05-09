@@ -76,7 +76,7 @@ final_prob = [prob_ej prob_ch prob_sr prob_sb]./sum_probs;
 
 result=final_prob; 
 %  result = importdata("test.mat");
- save('result.mat','result');
+save('D:/program/ec500_web/app/main/result.mat','result');
 end
 
 

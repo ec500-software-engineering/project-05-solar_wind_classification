@@ -75,8 +75,8 @@ def uploaded_file():
             username8 = signin_form.username8.data
             input_array = [float(username2),float(username3),float(username4),float(username5),float(username6),float(username7),float(username8)]
             print('calculating...........')
-            print(type(input_array[0]))
-            pred, final = classifier([0.4727,-0.2643,-0.1365,-0.3163,0.4107,-1.0691,-0.9982])
+            # print(type(input_array[0]))
+            pred, final = classifier(input_array)
             # print(type(pred))
             return render_template('upload_ok.html',val1=time.time(),
                                    signin_form = signin_form,pred1=pred[0],
