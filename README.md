@@ -56,6 +56,8 @@ WTForms==2.2.1<br>
 ### Upload log
 ![image](https://github.com/ec500-software-engineering/project-05-solar_wind_classification/blob/master/web/images_readme/log.PNG)
 
+### Result:
+![image](https://github.com/ec500-software-engineering/project-05-solar_wind_classification/blob/master/web/images_readme/127.0.0.1_5000_uploadok.png)
 
 ## Authors:
 
