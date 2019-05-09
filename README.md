@@ -1,4 +1,3 @@
-![Build Status](https://travis-ci.org/ec500-software-engineering/project-05-solar_wind_classification.svg?branch=master) Because the Matlab code is not compatable with the travis CI.
 # Solar_Wind_Classification_No.1
 This is a final projcet for EC500 Software Engineering
 
@@ -27,20 +26,41 @@ The first sprint is an open stage of the project. During the first sprint, we pl
 3.	Construct the basic structure of solar wind classification.<br>
 4.	Think a way of a direction on how to optimize the project structure or algorithm.<br>
 
-## Environemts and APIs:
+## Environemts and APIs(Partial):
+All of the related librarise included in requirements.txt<br>
 Matlab<br>
+Flask==1.0.2<br>>
+matlabengineforpython===R2018a<br>
+numpy==1.16.3<br>
+opencv-python==4.1.0.25<br>
+scipy==1.2.1<br>
+SQLAlchemy==1.3.3<br>
+WTForms==2.2.1<br>
+
 
 ## Architecture:
 ![image](https://github.com/ec500-software-engineering/project-05-solar_wind_classification/blob/master/images/Blank%20Diagram.png) 
 
 ## Usage:
-Download all the files in the directory 'Matlab', then follow the instruction in the classify_solar_wind.m. The prediction of the classifer is stored in the trained.mat.
+1) Download all the files in the repo and setup related libraries on your computer or virtual machine. <br>
+2) cd to the loacation where you dowloaede the project and then type python manage.py runserver. <br>
+3) Open the website on your chrome, the address may be http://127.0.0.1:5000/ <br>
+
+## Some view of our website:
+### Home
+![image](https://github.com/ec500-software-engineering/project-05-solar_wind_classification/blob/master/web/images_readme/127.0.0.1_5000_.png)
+
+### Upload file
+![image](https://github.com/ec500-software-engineering/project-05-solar_wind_classification/blob/master/web/images_readme/127.0.0.1_5000_upload.png)
+
+### Upload log
+![image](https://github.com/ec500-software-engineering/project-05-solar_wind_classification/blob/master/web/images_readme/log.PNG)
 
 
 ## Authors:
 
-* **Jing Li** - jingli18@bu.edu - *Initial work*
-* **Mingdao Che** - mdche@bu.edu - *Initial work*
+* **Jing Li** - jingli18@bu.edu - *Model Design*
+* **Mingdao Che** - mdche@bu.edu - *Website*
 
 ## Citing literature:
 [Classification of Solar Wind With Machine Learning Enrico Camporeale  Algo Carè  Joseph E. Borovsky First published: 16 October 2017](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2017JA024383)
